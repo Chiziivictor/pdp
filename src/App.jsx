@@ -121,9 +121,8 @@ const Product = () => {
     return swal("Item added to Cart");
   };
 
-  const random = Math.floor(Math.random() * 20 + 1);
-
   useEffect(() => {
+    const random = Math.floor(Math.random() * 20 + 1);
     setLoading(true);
     const getProduct = async () => {
       const response = await fetch(
